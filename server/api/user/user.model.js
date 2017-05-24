@@ -39,7 +39,11 @@ let UserSchema = new Schema({
   salt: String,
   facebook: {},
   google: {},
-  github: {}
+  github: {},
+  isOfferNotification: {
+    type: Boolean,
+    default: true
+  }
 }, {
   toObject: {virtuals: true},
   toJSON: {virtuals: true},

@@ -28,6 +28,11 @@
                     <input type="password" name="confirmPassword" ng-model="vm.user.confirmPassword" match="vm.user.password" ng-minlength="3" required="" class="form-control"/>
                     <p ng-show="form.confirmPassword.$error.match && vm.submitted" class="help-block">Passwords must match.</p>
                 </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="isOfferNotification" ng-model="vm.user.isOfferNotification" ng-init="vm.user.isOfferNotification=true"> Я согласен получать информацию об акциях и скидках
+                    </label>
+                </div>
                 <div>
                     <button type="submit" class="btn btn-inverse btn-lg btn-register">Зарегистрироваться</button> <a ui-sref="login" class="btn btn-default btn-lg btn-login">Форма входа</a>
                 </div>
